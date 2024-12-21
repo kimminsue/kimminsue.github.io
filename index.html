@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홈페이지_김민수</title>
+    <style>
+        #LIST {background-color: rgb(231, 241, 241);}
+        nav {background-color: beige;}
+        header {background-color: rgb(220, 228, 203);}
+        #LIST2 {background-color: rgb(231, 215, 202);}
+        #LIST3 {background-color: rgba(212, 238, 61, 0.396);}
+        #LIST4 {background-color: rgb(230, 219, 235);}
+
+    </style>
+</head>
+<body>
+    <header>
+   <h1>인상주의의 시작, 클로드 모네</h1>
+   <h2>환영합니다. 이 곳은 클로드 모네에 관한 내용들을 감상하고 공유하는 공간입니다.</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href>홈</a></li>
+                <li><a href>클로드 모네란?</a></li>
+                    <li><a href>작품 투표</a></li>
+                        <li><a href>감상 공유</a></li>
+                            <li><a href>로그인</a></li>
+        </ul>
+    </nav>
+    <section id="LIST4">
+        <H2>클로드 모네란?</H2>
+        <P>본명 오스카 클로드 모네는 1840년 프랑스 파리에서 태어났으며, '인상주의의 아버지'로 불리는 인상파의 창시자이자 개척자이다. 그는 주변 세상에 대한 순간적인 인상을 전달하기 위해 노력했으며 '수련'과 같은 연작을 그려내기도 하였다.</P>
+    </section >
+    <section ID="LIST">
+    <H2>작품 투표</H2>
+    <p>아래 작품들 중 마음에 드는 작품을 고르세요.(복수 선택 가능)</p>
+        <input type="checkbox" name="prefer" value="1">'인상, 해돋이'
+        <img src="img/KakaoTalk_20241014_150942442.jpg" height="120"><br>
+        <input type="checkbox" name="prefer" value="2">'수련'
+        <img src="img/KakaoTalk_20241014_150942442_01.jpg" height="120"><br>
+        <input type="checkbox" name="prefer" value="3">'파라솔을 든 여인'
+        <img src="img/KakaoTalk_20241014_150942442_02.jpg" height="120"><br>
+    </section>
+    <section ID="LIST2">
+        <H2>감상 공유</H2>
+            <p>마음에 드는 작품을 고르고 그에 대한 감상을 공유해 주세요.</p>
+            <textarea placeholder="작품명과 감상을 공유하세요.
+            rows="5"
+             id="review-text"></textarea>
+            <button id="submit-review">감상 제출</button>
+    </section>
+    <section ID="LIST3">
+        <h3>로그인</h3>
+    <hr>
+    <form name="fo" method="get">
+        사용자 ID : <input type="text" size="15" value="202401486"><br>
+        비밀번호 : <input type="password" size="15" value="minsue0701@">
+        submit 버튼 : <input type="submit" value="전송1">
+        <button type="submit">전송2</button><br>
+        reset 버튼 : <input type="reset" value="리셋1">
+        <button type="reset">리셋2</button><br>
+    </section>
+</body>
+</html>
