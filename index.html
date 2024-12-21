@@ -28,6 +28,16 @@
 </head>
 <body>
     <h4>202401486 김민수</h4>
+     <h2 id='clock'></h2>
+    <script>
+        function setClock(){
+            let now = new Date();
+            let s = now.getHours()+':'+now.getMinutes()+':'+now.getSeconds();
+            document.getElementById('clock').innerHTML=s;
+            setTimeout('setClock()', 1000);
+        }
+        setClock();
+    </script>
     <header>
    <h1>인상주의의 시작, 클로드 모네</h1>
    <h2>환영합니다. 이 곳은 클로드 모네에 관한 내용들을 감상하고 공유하는 공간입니다.</h2>
@@ -41,16 +51,7 @@
                             <li><a href>로그인</a></li>
         </ul>
     </nav>
-    <h2 id='clock'></h2>
-    <script>
-        function setClock(){
-            let now = new Date();
-            let s = now.getHours()+':'+now.getMinutes()+':'+now.getSeconds();
-            document.getElementById('clock').innerHTML=s;
-            setTimeout('setClock()', 1000);
-        }
-        setClock();
-    </script>
+
     <section id="LIST4">
         <H2>클로드 모네란?</H2>
         <P>본명 오스카 클로드 모네는 1840년 프랑스 파리에서 태어났으며, '인상주의의 아버지'로 불리는 인상파의 창시자이자 개척자이다. 그는 주변 세상에 대한 순간적인 인상을 전달하기 위해 노력했으며 '수련'과 같은 연작을 그려내기도 하였다.</P>
@@ -75,14 +76,23 @@
     </section>
     <section ID="LIST3">
         <h3>로그인</h3>
-    <hr>
-    <form name="fo" method="get">
-        사용자 ID : <input type="text" size="15" value="202401486"><br>
-        비밀번호 : <input type="password" size="15" value="minsue0701@">
-        submit 버튼 : <input type="submit" value="전송1">
-        <button type="submit">전송2</button><br>
-        reset 버튼 : <input type="reset" value="리셋1">
-        <button type="reset">리셋2</button><br>
+     <script>function checkNumeric(elem, msg) {
+        let exp = /^[0-9]+$/;
+        if (elem.value.match(exp)) {
+            return true;
+            } else {
+                alert(msg);
+                elem.focus();
+                return false;
+                }
+            }
+            </script>
+    <form>
+        학번(숫자만 입력) : <input type="password" id='password'/><br>
+        <input type='button'
+        onclick="checkNumeric(document.getElementById('password'), '숫자만 입력하세요.')"value='확인' />
+    </form>
     </section>
+
 </body>
 </html>
